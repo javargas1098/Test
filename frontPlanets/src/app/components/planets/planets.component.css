@@ -1,0 +1,118 @@
+p,
+textarea,
+a,
+.btn {
+    font-family: OpenSans-Regular, sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: OpenSans-Bold, sans-serif;
+}
+
+.container-main {
+    height: 100%;
+    width: 100%;
+    min-width: 1024px;
+    background-color: white;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-select select {
+    display: none;
+}
+
+.section-title h6 {
+    margin: auto 0;
+}
+
+.select-title {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    color: #495057;
+}
+
+.table-car {
+    width: 100%;
+}
+
+.title-row {
+    border-radius: 15px;
+    display: flex;
+    margin: 10px 50px 30px 50px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    min-width: 800px;
+}
+
+.car-cards {
+    height: 90px;
+    background-color: #EFEFF1;
+    border-radius: 15px;
+    margin: 30px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 0 rgba(186, 186, 186, 0.55);
+    min-width: 800px;
+}
+
+.card {
+    margin: 10px 10px;
+    width: calc((100% - (20px * 8) - 34px) / 7);
+    border-color: #EFEFF1;
+    background-color: #EFEFF1;
+    text-align: center;
+    height: auto;
+    max-height: 100%;
+    font-weight: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+form {
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.form-control:focus {
+    background-color: #EFEFF1;
+    border-color: #EFEFF1;
+    outline: 0;
+    box-shadow: none;
+}
+
+.container-buttons {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+}
+
+.container-main {
+    height: 100vh;
+    width: 100%;
+    min-width: 1024px;
+    background-color: #EFEFF1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}

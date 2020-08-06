@@ -1,0 +1,27 @@
+<app-navbar [navbar]="navbar"></app-navbar>
+<table class='table-car'>
+    <caption></caption>
+    <tr class='title-row'>
+        <th scope="col" class="column-name bold">
+
+            Identificacion </th>
+        <th scope="col" mat-sort-header="fechaEmision" class="column-name bold">
+            Nombre
+        </th>
+        <th scope="col" mat-sort-header="proyectoReceptor" class="column-name bold">
+            #clicks
+        </th>
+    </tr>
+
+    <tr class='car-cards' *ngFor="let per of persons ;let i=index" (click)="redireccion(per.card,per.type)">
+        <td class='card bold'>
+            {{per.card}}
+        </td>
+        <td class='card'>
+            <div>{{per.name}}</div>
+        </td>
+        <td class='card'>
+            <div>{{per.cantidad}}</div>
+        </td>
+    </tr>
+</table>
