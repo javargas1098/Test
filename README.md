@@ -10,6 +10,9 @@ Run `ng serve` for a dev server (frontPlanets). Navigate to `http://localhost:42
 ![formula1](imagenes/image1.PNG)
 ![formula2](imagenes/imagen2.PNG)
 
+## Swagger evidences 
+![formula3](imagenes/imagen3.PNG)
+
 ## Autor
 
 * **Javier Vargas** - 
