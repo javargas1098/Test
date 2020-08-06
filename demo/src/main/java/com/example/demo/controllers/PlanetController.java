@@ -35,7 +35,7 @@ public class PlanetController {
     PlanetService planetService;
 
     @GetMapping(value = "/all")
-    public ResponseEntity<List<Planet>> allCars() {
+    public ResponseEntity<List<Planet>> allPlanets() {
         try {
             List<Planet> persons = planetService.findAll();
             return new ResponseEntity<>(persons, HttpStatus.OK);
@@ -48,7 +48,7 @@ public class PlanetController {
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<Optional<Planet>> employeesById(@PathVariable("id") String id) {
+    public ResponseEntity<Optional<Planet>> planetsById(@PathVariable("id") String id) {
         try {
             Optional<Planet> planet = planetService.findById(id);
             return new ResponseEntity<>(planet, HttpStatus.OK);
@@ -87,7 +87,7 @@ public class PlanetController {
 
     @PostMapping(value = "/createall")
     @Transactional
-    public ResponseEntity<String> insertEmployee(@RequestBody List<Planet> planets) {
+    public ResponseEntity<String> insertPlanets(@RequestBody List<Planet> planets) {
         planets.forEach(planet -> {
             insertPlanet(planet);
         });

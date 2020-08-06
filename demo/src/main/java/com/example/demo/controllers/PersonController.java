@@ -32,7 +32,7 @@ public class PersonController {
     PersonService personService;
 
     @GetMapping(value = "/all")
-    public ResponseEntity<List<Person>> allCars() {
+    public ResponseEntity<List<Person>> allPersons() {
         try {
             List<Person> persons = personService.findAll();
             return new ResponseEntity<>(persons, HttpStatus.OK);
@@ -45,7 +45,7 @@ public class PersonController {
     }
 
     @GetMapping(value = "/{type}/{card}")
-    public ResponseEntity<Optional<Person>> employeesById(@PathVariable("type") String type,
+    public ResponseEntity<Optional<Person>> personsById(@PathVariable("type") String type,
             @PathVariable("card") int card) {
         try {
             Optional<Person> person = personService.findById(type, card);
@@ -85,7 +85,7 @@ public class PersonController {
 
     @PostMapping(value = "/createall")
     @Transactional
-    public ResponseEntity<String> insertEmployee(@RequestBody List<Person> persons) {
+    public ResponseEntity<String> insertPersons(@RequestBody List<Person> persons) {
         persons.forEach(person->{
             insertPerson(person);
         });
