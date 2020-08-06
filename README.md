@@ -7,7 +7,7 @@ Rirst run `mvn spring-boot:run ` for a dev server (demo), then use the postmna a
 Run `ng serve` for a dev server (frontPlanets). Navigate to `http://localhost:4200/`. 
 
 ## Postman evidences 
-![formula1](imagenes/imagen1.PNG)
+![formula1](imagenes/image1.PNG)
 ![formula2](imagenes/imagen2.PNG)
 
 ## Autor
